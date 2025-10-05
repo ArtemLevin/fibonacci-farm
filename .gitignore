@@ -1,0 +1,68 @@
+# --- Python / Build ---
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.cache/
+
+# --- Virtualenv / Poetry / Pipenv ---
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.poetry/
+pip-log.txt
+
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Env / Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Testing / Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# --- Type checking / Linters ---
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Alembic ---
+# Миграции версионируем, поэтому НЕ игнорируем migrations/versions/*
+# Игнорируем локальные артефакты автогенерации, если появятся
+alembic.ini.bak
+
+# --- Docker ---
+# Игнорируем локальные тома/артефакты, если создавались вручную
+docker-data/
+*.pid
+
+# --- Misc ---
+*.sqlite
+*.sqlite3
